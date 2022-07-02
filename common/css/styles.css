@@ -1,0 +1,89 @@
+html {    
+    width: 400px;
+    height: 250px;
+    background: #151619;
+    color: #c9cbcd;
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+.container {
+    text-align: center;
+  }
+
+  .container h1
+  {
+  color:#80bbff;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  font-size: 35;
+  }
+
+  p strong{
+   display:block;
+   padding-bottom: 20px;
+  }
+  
+  .textarea {
+    border: 1px solid rgb(124, 174, 255);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+    width:90%;
+    min-height: 10px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    border:none;
+    border-radius: 60px;
+    background-color: transparent;
+    color: #c3c4ca;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 210ms ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor:pointer
+  }
+  .button:hover {
+    background-color: #35b84a;
+  }
+  #saving:hover{
+    
+    background-color: #c82323;
+  }
+  .button:not(:first-of-type) {
+    margin-left: 15px;
+  }
+  .button-arrow .arrow-icon {
+    overflow: visible;
+    margin-left: 3px;
+    margin-bottom: -1px;
+    width: 8px;
+  }
+  .button-arrow .arrow-head {
+    transform: translateX(0);
+    transition: transform 150ms ease-in-out;
+  }
+  .button-arrow .arrow-body {
+    opacity: 0;
+    transform: scaleX(1);
+    transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+  }
+  .button-arrow:hover .arrow-head {
+    transform: translateX(3px);
+  }
+  .button-arrow:hover .arrow-body {
+    opacity: 1;
+    transform: scaleX(2);
+  }
