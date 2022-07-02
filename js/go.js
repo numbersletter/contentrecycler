@@ -32,7 +32,7 @@ function saveLinks()
     let sparsed_text = text.match(/https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,}/igm);
 
     localStorage.setItem('LINKS', JSON.stringify(sparsed_text));
-    console.log(localStorage.getItem("LINKS"));
+    //console.log(localStorage.getItem("LINKS"));
 }
 
 function loadLinks()
