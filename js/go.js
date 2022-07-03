@@ -24,7 +24,7 @@ function findStream()
     let SPARSED = decipherTextArea();
     localStorage.setItem("LINKS",JSON.stringify(SPARSED));
 
-    let openlink = SPARSED[Math.floor(Math.random() * (sparsed_text.length))];
+    let openlink = SPARSED[Math.floor(Math.random() * (SPARSED.length))];
     window.open(openlink,"_blank");
     //console.log(localStorage.getItem('LINKS'))
 
